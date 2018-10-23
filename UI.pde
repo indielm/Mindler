@@ -24,6 +24,7 @@ void initUI() {
   cp5.addButton("load").setPosition(70, y).setSize(50, 10);
   cp5.addButton("resetCam").setPosition(150, y).setSize(50, 10);
   textureList  = cp5.addScrollableList("textureList").setPosition(10, yO + (y+=yO)).setSize(120, 120);
+  textureList.setSize(100,500);
   textureList.getCaptionLabel().set(texture);
   textureList.getCaptionLabel().setColor(0xffff0000);
   blockNames = productionNames.split(",");
