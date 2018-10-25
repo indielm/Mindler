@@ -3,34 +3,30 @@ import controlP5.*;
 ControlP5 cp5;
 
 PShape model;
-int tileSize = 9;
+int tileSize = 8;
 float bend = 0.7;
 float scale2 = 1.000;
 int texAngle = 0;
 float a = 0, b = 1.0, c = 0.00, d = 1-bend, e = 2+bend, f = 3.00, h = 1.0;
 
-PVector rot = new PVector(0.7,0.0,QUARTER_PI);
+PVector rot = new PVector(0.7, 0.0, QUARTER_PI);
 String texture = "core";
 boolean wireframe = false;
 boolean backFaceCulling = false;
 boolean autoLoad = true;
 
 int index = 0;
+int tab = 2;
 
 void setup() {
   size(800, 800, P3D);
   ((PGraphicsOpenGL)g).textureSampling(2);
   cp5 = new ControlP5(this);
   initSprites();
+  
+  buildTabs = loadStrings("data/buildTab.csv");
   initUI();
-  int i = 0;
-
-  /*for (String s : spritesAtlas.keySet()) {
-   textureList.addItem(s, i);
-   i++;
-   }*/
-   load();
-   //cp5.saveProperties("default", "default");
+  load();
 }
 
 void draw() {
@@ -73,11 +69,11 @@ void initModel() {
   model.rotate(-HALF_PI);
   float tiles = 3;
   float scale = tileSize;
-  PVector uv = new PVector(0,0);
+  PVector uv = new PVector(0, 0);
   for (float[] p : modelVerts) {
     uv.set(scale2*p[0]/tiles-0.5, scale2*p[1]/tiles-0.5)
       .rotate(texAngle*HALF_PI)
-      .add(0.5,0.5);
+      .add(0.5, 0.5);
     model.vertex(p[0]*scale, p[1]*scale, p[2]*scale*1.0, uv.x, uv.y);
   }
   model.endShape();

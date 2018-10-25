@@ -14,20 +14,37 @@ void initUI() {
   addSlider("b", 1.0, 0.0, 3.0);
   //addSlider("c", 0.0, 0.0,3.0);
   //addSlider("f", 3.0, 2.0, 4.0);
-  addSlider("h", 1.0, 0.0, 1.5);
+ // addSlider("h", 1.0, 0.0, 1.5);
   addSlider("scale2", 1.0, 0.5, 1.5);
   addSlider("texAngle", 0, 0, 3);
   cp5.addToggle("wireframe").setPosition(10, y+=yO).setSize(50, 10);
-  cp5.addToggle("backFaceCulling").setPosition(70, y).setSize(50, 10); 
-  cp5.addToggle("autoLoad").setPosition(150, y).setSize(50, 10);
+  cp5.addToggle("backFaceCull").setPosition(70, y).setSize(50, 10); 
+  cp5.addToggle("autoLoad").setPosition(130, y).setSize(50, 10);
+  cp5.addButton("resetCam").setPosition(190, y).setSize(50, 10);
   cp5.addButton("save").setPosition(10, y+=yO*2).setSize(50, 10);
   cp5.addButton("load").setPosition(70, y).setSize(50, 10);
-  cp5.addButton("resetCam").setPosition(150, y).setSize(50, 10);
-  textureList  = cp5.addScrollableList("textureList").setPosition(10, yO + (y+=yO)).setSize(120, 120);
-  textureList.setSize(100,500);
+  cp5.addButton("BuildJSON").setPosition(130, y).setSize(50, 10);
+  
+  
+  ListBox tabList  = cp5.addListBox("tabList").setPosition(10, (y+=yO)).setSize(60, 80);
+  tabList.addItem("Turrets",0);
+  tabList.addItem("Drills",0);
+  tabList.addItem("Movers",0);
+  tabList.addItem("Liquid",0);
+  tabList.addItem("Power",0);
+  tabList.addItem("Walls",0);
+  tabList.addItem("Factory",0);
+  tabList.addItem("Weapon",0);
+  
+  initTexList();
+}
+
+void initTexList() {
+  textureList  = cp5.addScrollableList("textureList").setPosition(10, 225).setSize(100, 120);
+  textureList.setSize(100, 500);
   textureList.getCaptionLabel().set(texture);
   textureList.getCaptionLabel().setColor(0xffff0000);
-  blockNames = productionNames.split(",");
+  blockNames = buildTabs[tab].split(", ");
   int i = 0;
   File f;
   for (String s : blockNames) {
@@ -38,9 +55,14 @@ void initUI() {
   }
 }
 
+void tabList(int n){
+  tab = n;
+  initTexList();
+}
+
 void save(int n) {
   try {
-    String []data = {texture, Float.toString(bend), Float.toString(b), Float.toString(h), Float.toString(scale2), Integer.toString(texAngle)};
+    String []data = {texture, Float.toString(bend), Float.toString(b), Integer.toString(texAngle)};
     saveStrings("/data/models/" +texture + ".mm", data);
     textureList.getItem(index).put("color", green);
   }
@@ -59,8 +81,8 @@ void load(int n) {
       String []data = loadStrings("/data/models/" +texture + ".mm");
       bend = Float.parseFloat(data[1]);
       b = Float.parseFloat(data[2]);
-      h = Float.parseFloat(data[3]);
-      scale2 = Float.parseFloat(data[4]);
+      //h = Float.parseFloat(data[3]);
+      //scale2 = Float.parseFloat(data[4]);
       texAngle = Integer.parseInt(data[5]);
       sliders.get(0).setValue(bend);
       sliders.get(1).setValue(b);
@@ -98,6 +120,7 @@ void textureList(int n) {
   textureList.getCaptionLabel().set(texture);
   if (autoLoad) load();
   //textureList.close();
+  textureList.setOpen(true);
 }
 
 void addSlider(String varName, float initVal, float rangeLow, float rangeHigh, int ticks) {

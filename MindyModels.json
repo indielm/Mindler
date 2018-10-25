@@ -1,0 +1,339 @@
+[
+  null,
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "block-2x2",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "block-3x3",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "block",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "coaldrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "coalgenerator",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "coalpurifier",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "combustiongenerator",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "compositewall",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "conduit",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "conveyor",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.8650000095367432,
+    "sprite": "conveyortunnel",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.6549999713897705,
+    "sprite": "core",
+    "type": 1,
+    "height": 1.5
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "crucible",
+    "type": 1,
+    "height": 1.5
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "duriumwall-large",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "duriumwall",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "fluxpump",
+    "type": 1,
+    "height": 1.215000033378601
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "irondrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "ironwall",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "junction",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "lavasmelter",
+    "type": 1,
+    "height": 1.215000033378601
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "liquidjunction",
+    "type": 1,
+    "height": 1.215000033378601
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "liquidrouter",
+    "type": 1,
+    "height": 1.215000033378601
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.4599999785423279,
+    "sprite": "nuclearreactor",
+    "type": 1,
+    "height": 1.5
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "oilrefinery",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "omnidrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.4599999785423279,
+    "sprite": "powerbooster",
+    "type": 1,
+    "height": 1.5
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "poweredconveyor",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.6024999618530273,
+    "sprite": "powerlaser",
+    "type": 1,
+    "height": 0.19499999284744263
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.6024999618530273,
+    "sprite": "powerlaserrouter",
+    "type": 1,
+    "height": 0.19499999284744263
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "pulseconduit",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "pump",
+    "type": 1,
+    "height": 1.215000033378601
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "router",
+    "type": 1,
+    "height": 2.0099997520446777
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "rtgenerator",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5049998760223389,
+    "sprite": "shieldgenerator",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5349999666213989,
+    "sprite": "smelter",
+    "type": 1,
+    "height": 1.0049998760223389
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.45249998569488525,
+    "sprite": "sorter",
+    "type": 1,
+    "height": 2.0099997520446777
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "steelconveyor",
+    "type": 1,
+    "height": 0.21000000834465027
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "steelwall-large",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "steelwall",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "stonedrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.8199999332427979,
+    "sprite": "stoneformer",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "stonewall",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.7674999237060547,
+    "sprite": "teleporter",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "thermalgenerator",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "titaniumdrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5575000047683716,
+    "sprite": "titaniumpurifier",
+    "type": 1,
+    "height": 1
+  },
+  {
+    "texAngle": 3,
+    "bend": 1,
+    "sprite": "titaniumwall-large",
+    "type": 1,
+    "height": 1.994999885559082
+  },
+  {
+    "texAngle": 3,
+    "bend": 0.5275000333786011,
+    "sprite": "uraniumdrill",
+    "type": 1,
+    "height": 1.2300000190734863
+  }
+]
